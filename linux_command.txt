@@ -1,0 +1,55 @@
+ls
+ls -ltr
+whoami
+pwd
+nano [ nano new.txt -> write something then press ctrl+O then enter then ctrl+x]
+vi new.txt [press i then write whatever you want then press ESC :wq enter]
+cat new.txt
+cd ../..
+cd ..
+date
+cal
+ctrl+l / clear  -> clear screen
+cat
+mkdir
+rmdir
+rm
+touch
+cp
+ifconfig
+git clone url
+
+
+cd Downloads
+mkdir folder
+cd folder
+touch 1.txt 2.txt 3.txt
+ls
+zip folder 1.txt 2.txt 3.txt [use for create zip file]
+
+unzip zip_name [use for unzip any file]
+sudo su
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install software_name
+sudo dpkg -i software_name
+history
+ping 8.8.8.8 [internet check]
+sudo apt install openjdk-11-jre
+sudo apt install docker.io
+sudo apt-get install git -y
+uname
+mkdir newfolder;touch new.txt [if you use ; that means i will be create multipal command in a singal line]
+permissions [r:read-4,w:write-2,x:execute-1 =>777 means read+write+execute; 0=> they don't have any permission]
+
+
+
+
+
+
+
+
+
+
+
+
+

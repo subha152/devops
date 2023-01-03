@@ -1,0 +1,27 @@
+person:
+  - name: "Subho"
+    age: 23
+    gender: "Male"
+  - name: "Deep"
+    age:  21
+    gender: "Female"
+  - desc: null
+  - hobbies: 
+    - cricket
+    - hockey
+    - football
+  - hobbies:  ["cricket","hockey","football"]
+  - friends:
+    - name: "Deep Roy"
+      age:  24
+    - name: "Amit"
+    - age:  25
+  - description: >
+        The target audience of this tutorial includes 
+        web developers who work with JSON and XML files for configuration settings. 
+        Any programmer who intends to write markup in a human readable structured 
+        data format can also learn YAML.
+  - signature: |
+      Thanks regards
+      Subho
+      from kolkata

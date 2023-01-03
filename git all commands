@@ -1,0 +1,18 @@
+mkdir project
+cd project
+git config --global user.name "subho Ghosh"
+git config --global user.email "subho.3600.ghosh@gmail.com"
+git config --global --edit
+git init
+ls -a
+git status
+git add index.html
+git add -A
+git status
+git commit -a "initial commit"
+git log
+git branch
+git branch  dev
+git checkout dev
+git checkout -b subho/new_branch
+git merge dev
