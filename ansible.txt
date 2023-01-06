@@ -1,0 +1,64 @@
+--------------------Ansible server---------------------------
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+ls
+yum install epel-release-latest-7.noarch.rpm
+yum update
+yum install git python python-level python-pip openssl ansible
+vi /etc/ansible/hosts
+and then add nodes private ip address
+vi /etc/ansible/ansible.cfg
+then remove # from inventory and sudo_user
+adduser ansible
+passwd ansible
+then put any password
+visudo
+then add 
+ansible ALL=(ALL) NOPASSWD: ALL
+su - ansible
+exit
+vi /etc/ssh/sshd_config
+then remove # permitRootLogin yes
+and remove # PasswordAuthentication yes
+and do # in the last PasswordAuthentication no 
+service sshd restart
+su - ansible
+ssh enter node1 private ip
+exit
+ssh_keygen
+enter
+ls -a
+cd .ssh/
+ls
+ssh-copy-id ansible@enter node1 ip
+
+--------------------node1------------------------
+sudo su
+adduser ansible
+passwd ansible
+then put any password
+visudo
+then add 
+ansible ALL=(ALL) NOPASSWD: ALL
+su - ansible
+exit
+vi /etc/ssh/sshd_config
+then remove # permitRootLogin yes
+and remove # PasswordAuthentication yes
+and do # in the last PasswordAuthentication no
+service sshd restart
+
+--------------------node2-------------------------
+sudo su
+adduser ansible
+passwd ansible
+then put any password
+visudo
+then add 
+ansible ALL=(ALL) NOPASSWD: ALL
+su - ansible
+exit
+vi /etc/ssh/sshd_config
+then remove # permitRootLogin yes
+and remove # PasswordAuthentication yes
+and do # in the last PasswordAuthentication no
+service sshd restart
