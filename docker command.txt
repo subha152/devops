@@ -1,0 +1,80 @@
+sudo su
+sudo yum install docker
+service docker status
+docker info
+service docker start
+service docker status
+docker info
+docker images
+docker ps
+docker ps -a
+docker run -it ubuntu /bin/bash
+ls
+cat /etc/os-release
+exit
+docker images
+docker run -it centos /bin/bash
+ls
+cat /etc/os-release
+exit
+docker ps -a
+docker pull jenkins/jenkins
+docker pull chef/chef
+docker images
+docker search ubuntu
+docker run -it --name subho ubuntu /bin/bash (if want name then use this command)
+exit
+docker ps -a
+docker start subho
+docker attach subho (if you want to go container)
+exit
+docker start subho
+docker stop subho
+docker ps -a
+docker rm subho (delete container)
+docker ps -a
+docker images
+docker rmi image_id (delete docker image)
+------------------------------------------------------------------------------------------
+docker --version
+docker -v
+docker pull hello-world
+docker pull openjdk
+docker images
+docker pull openjdk:18
+docker pull python
+docker search python
+docker run python
+docker ps
+docker ps -a
+docker run --name pythonContainer -d python
+docker run -it --name new_python_container -d python
+docker attach python
+docker exec -it copy_and_container_id python3
+docker inspect container_id
+docker pull mysql
+docker images
+docker run --name mysqlDb -e MYSQL_ROOT_PASSWORD=root -d mysql
+docker exec -it mysqlDb bash
+mysql -p
+enter password root
+docker pull nginx
+docker images
+docker run -it --name nginxServer -d -p 8081:80 nginx
+docker ps
+then check in your browser localhost:8080
+docker pull httpd
+docker images
+docker login
+docker push
+docker commit
+docker copy
+docker logs
+docker volume
+docker build -t myubuntuimage // this command use for after dockerfile in our local system build purpose
+--------------------------------------------------------------------------------------------------------------
+dockerfile            
+FROM ubuntu
+MAINTAINER subho
+RUN apt-get update
+CMD ["echo","This is my first ubuntu image"]
