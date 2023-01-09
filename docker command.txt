@@ -78,3 +78,29 @@ FROM ubuntu
 MAINTAINER subho
 RUN apt-get update
 CMD ["echo","This is my first ubuntu image"]
+
+---------------------------------------------------------------------------------------------------------------
+for java
+Dockerfile
+
+FROM openjdk:11
+WORDIR /usr/src/myapp
+COPY javac Test.java
+CMD["java","Test"]
+
+----------------------------------------------------------------------------------------------------------------
+for python
+create two file main.py and Dockerfile
+
+FROM python
+WORKDIR /usr/src/myapp
+COPY . /usr/src/myapp
+CMD ["python3","main.py"]
+
+-----------------------------------------------------------------------------------------------------------------
+for springboot
+FROM openjdk
+WORKDIR /usr/src/myapp
+COPY . /usr/src/myapp
+CMD ["java","-jar","DockerTest-0.0.1-SNAPSHOT.jar"]
+EXPOSE 9595
