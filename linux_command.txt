@@ -58,7 +58,9 @@ ls -a [show hidden file]
 groupadd <groupname> [create a group]
 groupdel <groupname> [delete group]
 usermod -g <groupname> <username> [adding user to the group]
-
+ps [use for show all process which running currently]
+ps -f [use for show all process full details which is running currently]
+ps -e
 
 
 
