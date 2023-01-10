@@ -53,6 +53,11 @@ more file.txt [its show not full line by line press space bar in your keyboard]
 less file.txt [press space bar]
 
 ls -l or ll
+mkdir .file [create hidden file]
+ls -a [show hidden file]
+groupadd <groupname> [create a group]
+groupdel <groupname> [delete group]
+usermod -g <groupname> <username> [adding user to the group]
 
 
 
