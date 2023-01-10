@@ -67,7 +67,10 @@ ugo ->[u-your,g-group,o-others]
 chmod u+r file_name 
 -rwx rwx rwx
  u    g   o
-
+ 
+ 
+grep search_word_name search_file_name
+example:grep linux file.txt
 
 
 
