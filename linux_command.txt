@@ -18,8 +18,6 @@ touch
 cp
 ifconfig
 git clone url
-
-
 cd Downloads
 mkdir folder
 cd folder
@@ -40,6 +38,24 @@ sudo apt-get install git -y
 uname
 mkdir newfolder;touch new.txt [if you use ; that means i will be create multipal command in a singal line]
 permissions [r:read-4,w:write-2,x:execute-1 =>777 means read+write+execute; 0=> they don't have any permission]
+
+adduser subha [use for create a new user]
+passwd subha
+then create a password
+
+userdel subha [used for delete user]
+
+head file.txt [bydefault it show first 10 line]
+head -20 file.txt [its show first 20 line]
+tail file.txt [bydefault it show last 10 line]
+tail -10 file.txt [its show last 20 line]
+more file.txt [its show not full line by line press space bar in your keyboard]
+less file.txt [press space bar]
+
+ls -l or ll
+
+
+
 
 
 
