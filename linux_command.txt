@@ -62,7 +62,11 @@ ps [use for show all process which running currently]
 ps -f [use for show all process full details which is running currently]
 ps -e
 
-
+rwx ->[r-read,w-write,x-execution]
+ugo ->[u-your,g-group,o-others]
+chmod u+r file_name 
+-rwx rwx rwx
+ u    g   o
 
 
 
