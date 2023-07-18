@@ -9,7 +9,7 @@ git status
 git add index.html
 git add -A
 git status
-git commit -a "initial commit"
+git commit -m "initial commit"
 git log
 git branch
 git branch  dev
